@@ -7,6 +7,8 @@ Para crear el layer en aws lambda es necesario crear el paquete (.zip) con el si
 
 Este layer se construyó para el runtime de ruby 2.5.0 utilizando la versión 1.1.3 de la gema 'pg' y se espera ser utilizado con Postgres 11.
 
+Para hacer uso del método new_connection es necesario definir las constantes HOST, DATABASE, USERNAME Y PASSWORD.
+
 Importante: En la configuración de la función del lambda es necesario sobrescribir la variable de entorno GEM_PATH por '/opt/ruby/2.5.0'.
 Ver más en: https://medium.com/devopslinks/how-to-use-aws-lambda-layers-f4fe6624aff1
 
