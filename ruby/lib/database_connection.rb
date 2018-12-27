@@ -1,3 +1,3 @@
-def new_connection
-	PG.connect(host: HOST, dbname: DATABASE, user: USERNAME, password: PASSWORD)
+def new_connection(params = {})
+	PG.connect(host: params['host'], dbname: params['database'], user: params['username'], password: params['password'])
 end
